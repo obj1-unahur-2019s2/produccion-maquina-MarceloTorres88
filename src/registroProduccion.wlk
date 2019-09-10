@@ -29,6 +29,7 @@ object registroProduccion {
 		return produccionPorDia.last()
 	}
 	method cantidadProduccionesMayorALaPrimera(){
+	//para la cantidad utilizamos count, es decir... produccionPorDia.count({unNumero => unNumero > cuanto})
 		return self.produccionesSuperioresA(produccionPorDia.get(0))
 	}
 }
